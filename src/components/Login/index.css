@@ -1,0 +1,12 @@
+/* Write your CSS here */
+.heading {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.button {
+  background-color: #ffffff;
+  color: #2b2c49;
+  border-radius: 3px;
+  font-size: 10px;
+}
