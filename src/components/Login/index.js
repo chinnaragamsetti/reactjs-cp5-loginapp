@@ -3,10 +3,13 @@
 import './index.css'
 import LoginMessage from '../Message/'
 
-const Login = () =>(
-    <LoginMessage/>
-    <button className="button" type="button" onClick={this.Logout}>Login</button>
-  )
+const Login = () =>
+    return (
+        <div>
+            <LoginMessage/>
+            <button className="button" type="button" onClick={this.Logout}>Login</button>
+        </div>
+    );
   
 
 
