@@ -1,7 +1,7 @@
 // Write your code here
 
 import './index.css'
-import {LoginMessage} from '../Message'
+import LoginMessage  from '../Message'
 
 const Loginprofile = props => {
   const {Login} = props
