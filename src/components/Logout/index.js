@@ -1,7 +1,7 @@
 // Write your code here
 
 import './index.css'
-import {LogoutMessage} from '../Message'
+import LogoutMessage from '../Message'
 
 const Logoutprofile = props => {
   const {Logout} = props
