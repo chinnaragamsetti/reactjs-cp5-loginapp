@@ -1,11 +1,20 @@
 // Write your code here
 
 import './index.css'
-import LogoutMessage from '../Message/'
+import Message from '../Message'
 
-const Logout=()=>(
-    <LogoutMessage/>
-    <button className='button' type='button' onClick={this.Logout}>Logout</button>
-    )
-
-export default Logout
+const Logoutprofile = props => {
+  const {Logout} = props
+  const onLogout = () => {
+    Logout()
+  }
+  return (
+    <div>
+      <Message isLoggedIn={Logout} />
+      <button className="button" type="button" onClick={onLogout}>
+        Logout
+      </button>
+    </div>
+  )
+}
+export default Logoutprofile

@@ -1,13 +1,22 @@
 // Write your code here
 
 import './index.css'
-import LoginMessage from '../Message/'
+import Message from '../Message'
 
-const Login = () =>(
-    <LoginMessage/>
-    <button className="button" type="button" onClick={this.Logout}>Login</button>
+const Loginprofile = props => {
+  const {Login} = props
+
+  const onLogin = () => {
+    Login()
+  }
+
+  return (
+    <div>
+      <Message isLoggedIn={Login} />
+      <button className="button" type="button" onClick={onLogin}>
+        Login
+      </button>
+    </div>
   )
-  
-
-
-export default Login
+}
+export default Loginprofile

@@ -1,18 +1,18 @@
 // Write your code here
 
 import {Component} from 'react'
-import Login from '../Login'
-import Logout from '../Logout'
+import Loginprofile from '../Login'
+import Logoutprofile from '../Logout'
 import './index.css'
 
 class Home extends Component {
-  state = {isLoggedin: true}
+  state = {isLoggedin: false}
 
-  onLogout = () => {
+  Logout = () => {
     this.setState(prevState => ({isLoggedin: !prevState.isLoggedin}))
   }
 
-  onLogin = () => {
+  Login = () => {
     this.setState(prevState => ({isLoggedin: !prevState.isLoggedin}))
   }
 
@@ -21,7 +21,11 @@ class Home extends Component {
     return (
       <div className="container">
         <div className="subcontainer">
-          {isLoggedin ? <Logout /> : <Login />}
+          {isLoggedin ? (
+            <Logoutprofile Logout={this.Logout} />
+          ) : (
+            <Loginprofile Login={this.Login} />
+          )}
         </div>
       </div>
     )
