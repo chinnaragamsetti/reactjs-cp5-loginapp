@@ -5,12 +5,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 150px;
 }
 .subcontainer {
-  background-image: linear-gradient(to down, #2b2c49, #b5b9ff);
+  background-image: linear-gradient(to bottom, #2b2c49, #b5b9ff);
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
 }

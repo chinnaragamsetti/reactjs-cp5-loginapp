@@ -4,6 +4,7 @@ import {Component} from 'react'
 import Loginprofile from '../Login'
 import Logoutprofile from '../Logout'
 import './index.css'
+import Message from '../Message'
 
 class Home extends Component {
   state = {isLoggedin: false}
@@ -21,6 +22,7 @@ class Home extends Component {
     return (
       <div className="container">
         <div className="subcontainer">
+          {<Message isLoggedin={isLoggedin} />}
           {isLoggedin ? (
             <Logoutprofile Logout={this.Logout} />
           ) : (
